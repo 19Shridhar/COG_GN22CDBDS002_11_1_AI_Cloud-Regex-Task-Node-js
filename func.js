@@ -20,7 +20,7 @@ const regexMatch = (pattern,file,callback)=>{
         return callback("Enter a valid text",undefined)
     }
     else{
-        return file.match(pattern);
+        return callback(undefined,file.match(pattern));
     }
     
 }
@@ -34,7 +34,7 @@ const regexMatchAll = (pattern,file,callback)=>{
         return callback("Enter a valid text",undefined)
     }
     else{
-        return Array.from(file.matchAll(pattern))
+        return callback(undefined,Array.from(file.matchAll(pattern)));
     }
     
 }
@@ -48,7 +48,7 @@ const regexSearch = (pattern,file,callback)=>{
         return callback("Enter a valid text",undefined)
     }
     else{
-        return file.search(pattern)
+        return callback(undefined,file.search(pattern));
     }  
    
 }
@@ -61,7 +61,7 @@ const regexReplace = (from,to,file,callback)=>{
         return callback("Enter a valid text",undefined)
     }
     else{
-        return file.replace(from, to)
+        return callback(undefined,file.replace(from, to));
     }  
     
 }
@@ -74,7 +74,7 @@ const regexReplaceAll = (from,to,file,callback)=>{
         return callback("Enter a valid text",undefined)
     }
     else{
-        return file.replaceAll(from, to)
+        return callback(undefined,file.replaceAll(from, to));
     }  
     
 }
