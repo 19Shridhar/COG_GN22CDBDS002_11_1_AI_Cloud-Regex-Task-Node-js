@@ -11,3 +11,4 @@
       iv) regexSearch: For search
       v) regexReplace: For replace
       vi) regexReplaceAll: For replaceAll
+4) The png files are output screenshots
